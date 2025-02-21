@@ -32,39 +32,46 @@ const Features = () => {
     {
       id: 1,
       title: 'Interactive Learning',
-      description: 'Engage in hands-on learning experiences.'
+      // description: 'Engage in hands-on learning experiences.',
+      description:"      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, animi. Illum, amet eius iusto sint adipisci suscipit quasi sit nostrum voluptatem aspernatur ratione soluta reiciendis. Inventore quam repudiandae itaque tenetur."
     },
     {
       id: 2,
       title: 'Course Catalog',
-      description: 'Explore a wide variety of courses.'
+      // description: 'Explore a wide variety of courses.'
+            description:"      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, animi. Illum, amet eius iusto sint adipisci suscipit quasi sit nostrum voluptatem aspernatur ratione soluta reiciendis. Inventore quam repudiandae itaque tenetur."
     },
     {
       id: 3,
       title: 'Track Your Progress',
-      description: 'Stay on track with your learning goals.'
+      // description: 'Stay on track with your learning goals.'
+            description:"      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, animi. Illum, amet eius iusto sint adipisci suscipit quasi sit nostrum voluptatem aspernatur ratione soluta reiciendis. Inventore quam repudiandae itaque tenetur."
     },
     {
       id: 4,
       title: 'Earn Certifications',
-      description: 'Get certified in various fields.'
+      // description: 'Get certified in various fields.'
+            description:"      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, animi. Illum, amet eius iusto sint adipisci suscipit quasi sit nostrum voluptatem aspernatur ratione soluta reiciendis. Inventore quam repudiandae itaque tenetur."
     },
     {
       id: 5,
       title: 'Live Classes',
-      description: 'Join live sessions with instructors.'
+      // description: 'Join live sessions with instructors.'
+            description:"      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, animi. Illum, amet eius iusto sint adipisci suscipit quasi sit nostrum voluptatem aspernatur ratione soluta reiciendis. Inventore quam repudiandae itaque tenetur."
     },
     {
       id: 6,
       title: 'Expert Tutors',
-      description: 'Learn from experienced educators.'
+      // description: 'Learn from experienced educators.'
+            description:"      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, animi. Illum, amet eius iusto sint adipisci suscipit quasi sit nostrum voluptatem aspernatur ratione soluta reiciendis. Inventore quam repudiandae itaque tenetur."
     }
   ]
 
   return (
     <section className='py-16'>
+
       <div className='container mx-auto px-4 relative'>
-        <h2 className='text-5xl text-center mb-20 font-bold'>Exclusive  Features</h2>
+        <h2 className='text-4xl text-center mb-20 font-bold'>Exclusive  Features</h2>
         {/* Slick Slider */}
         <Slider {...settings} ref={sliderRef}>
           {itemCarousel.map((item) => (

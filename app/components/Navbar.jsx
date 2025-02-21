@@ -1,6 +1,7 @@
 // components/Navbar.js
 
 import Link from 'next/link';
+import { FaTrophy } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo on the left */}
         <div className="text-gray-800 text-xl font-bold">
-          <Link href="/">Logo</Link>
+          <Link href="/" className='flex items-center'> <FaTrophy className='mr-2'/> Online Learning</Link>
         </div>
 
         {/* Navbar Links */}
@@ -21,7 +22,7 @@ const Navbar = () => {
         </div>
 
         {/* Login/Signup Buttons on the right */}
-        <div className="flex space-x-4">
+        <div className="hidden md:flex space-x-4">
           <button className="text-white bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-lg">Login</button>
           <button className="text-white bg-green-500 hover:bg-green-600 py-2 px-4 rounded-lg">Signup</button>
         </div>
@@ -32,7 +33,7 @@ const Navbar = () => {
         <div className="text-white text-xl font-bold">
           <Link href="/">Logo</Link>
         </div>
-        <div className="flex space-x-4">
+        <div className="flex md:hidden space-x-4">
           <button className="text-white bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-lg">Login</button>
           <button className="text-white bg-green-500 hover:bg-green-600 py-2 px-4 rounded-lg">Signup</button>
         </div>
