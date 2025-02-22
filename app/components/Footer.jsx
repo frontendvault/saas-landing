@@ -4,6 +4,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
+            <h3 className="mb-2 text-lg font-semibold">Online Learning</h3>
             <p className="text-md text-gray-400">
               Lorem ipsum dolor sit amet consectetur. Velit interdum tellus elit diam amet eleifend suspendisse.
             </p>
