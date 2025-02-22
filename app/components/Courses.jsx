@@ -17,7 +17,7 @@ const courses = {
         author: "John Doe",
         rating: 4.5,
         price: "$49.99",
-        image: "https://via.placeholder.com/300"
+
       },
       {
         id: 2,
@@ -27,7 +27,7 @@ const courses = {
         author: "Jane Smith",
         rating: 4.8,
         price: "$59.99",
-        image: "https://via.placeholder.com/300"
+
       }
     ],
     "Data Science": [
@@ -39,7 +39,7 @@ const courses = {
         author: "Alice Johnson",
         rating: 4.7,
         price: "$39.99",
-        image: "https://via.placeholder.com/300"
+
       },
       {
         id: 4,
@@ -49,7 +49,7 @@ const courses = {
         author: "Michael Brown",
         rating: 4.9,
         price: "$69.99",
-        image: "https://via.placeholder.com/300"
+
       }
     ],
     "Cloud Computing": [
@@ -61,7 +61,7 @@ const courses = {
         author: "Sophia Wilson",
         rating: 4.6,
         price: "$79.99",
-        image: "https://via.placeholder.com/300"
+
       },
       {
         id: 6,
@@ -71,7 +71,7 @@ const courses = {
         author: "Chris Evans",
         rating: 4.8,
         price: "$59.99",
-        image: "https://via.placeholder.com/300"
+
       },
       
     ],
@@ -84,7 +84,7 @@ const courses = {
         author: "David Miller",
         rating: 4.7,
         price: "$89.99",
-        image: "https://via.placeholder.com/300"
+
       },
       {
         id: 8,
@@ -94,7 +94,7 @@ const courses = {
         author: "Emma Thompson",
         rating: 4.5,
         price: "$49.99",
-        image: "https://via.placeholder.com/300"
+
       },
       {
         id: 9,
@@ -104,7 +104,7 @@ const courses = {
         author: "Robert Johnson",
         rating: 4.6,
         price: "$69.99",
-        image: "https://via.placeholder.com/300"
+
       },
       {
         id: 10,
@@ -114,7 +114,7 @@ const courses = {
         author: "Linda White",
         rating: 4.8,
         price: "$79.99",
-        image: "https://via.placeholder.com/300"
+
       }
     ]
   };
@@ -124,7 +124,7 @@ export default function Courses() {
   const [activeTab, setActiveTab] = useState("Web Development");
 
   return (
-    <div className="container mx-auto p-4 md:h-screen flex items-center">
+    <div className="container mx-auto p-4 flex items-center md:py-20" id="courses">
     <div className='w-full'>  {/* Tabs */}
         <h2 className='text-center text-4xl font-bold mb-20'>Most Popular Courses</h2>
       <div className="flex flex-col md:flex-row space-x-4 mb-16">

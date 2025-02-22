@@ -62,7 +62,7 @@ const Testimonials = () => {
       </h2>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="px-3">
+          <div key={index} className="py-5 px-3 pb-10">
             <div className="bg-white p-6 shadow-lg rounded-xl text-center">
               <span 
                 className="text-center flex justify-center rounded-full mb-4 text-gray-300 text-5xl">

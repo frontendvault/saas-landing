@@ -1,60 +1,64 @@
-// components/FeatureSection.js
+import { MdOutlineDesignServices } from "react-icons/md";
+import { IoFitness } from "react-icons/io5";
+import { PiSpeakerHighBold } from "react-icons/pi";
 
-import {
-  FaCheckCircle,
-  FaCode,
-  FaLaptopCode,
-  FaMobile,
-  FaMobileAlt,
-  FaTabletAlt
-} from 'react-icons/fa'
+
+
+import React from 'react';
+import { FaLaptopCode } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <section className='py-16 bg-gray-100 md:h-screen flex items-center'>
-      <div className='container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
-        <div className='flex flex-col'>
-          <div className='flex justify-center mb-5'>
-            <FaLaptopCode size={200} className='text-orange-400' />
-          </div>
-          <div className='flex justify-center'>
-            <FaMobileAlt className='text-8xl mx-auto' />
-            <FaTabletAlt className='text-8xl mx-auto' />
-          </div>
-        </div>
-
-        <div>
-          <h2 className='text-4xl font-bold text-gray-800 mb-8'>
-            Learn Online, Anytime, Anywhere
-          </h2>
-          <p className='text-lg mb-10'>
-            We don’t just work with code and algorithms—we work with people. Our
-            approach combines technical excellence with collaboration, ensuring
-            scalable, intelligent solutions that drive innovation.
+    <div className="container mx-auto p-4 md:h-screen flex items-center mt-20 md:mt-0" id="services">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        {/* First Grid - Heading, Paragraph, and Button */}
+        <div className="flex flex-col justify-center space-y-4">
+          <h2 className="text-4xl font-extrabold text-gray-600">Online Classes For Remote Learning</h2>
+          <p className="text-lg text-gray-500 ">
+            Online learning offers a flexible, convenient, and efficient way to enhance your skills from the comfort of your home. With a wide range of courses available, remote learning opens up numerous opportunities for personal and professional growth.
           </p>
-
-          <div className='grid md:grid-cols-2 gap-6'>
-            <h3 className='text-xl font-semibold text-green-800 flex items-center'>
-              {' '}
-              <FaCheckCircle className='mr-2 ' /> Top Instructors
-            </h3>
-            <h3 className='text-xl font-semibold text-green-800 flex items-center'>
-              <FaCheckCircle className='mr-2 ' /> 6,000 Membership
-            </h3>
-            <h3 className='text-xl font-semibold text-green-800 flex items-center'>
-              <FaCheckCircle className='mr-2 ' /> 3,020 Online Courses
-            </h3>
-            <h3 className='text-xl font-semibold text-green-800 flex items-center'>
-              <FaCheckCircle className='mr-2 ' /> Online Certifications
-            </h3>
-          </div>
-          <button className='bg-green-700 hover:bg-green-800 ease-in-out duration-200 py-2 px-6 rounded-full text-white font-medium uppercase mt-10'>
-            Find Out more{' '}
+          <button className="px-6 py-3 text-white bg-green-600 hover:bg-green-700 w-[200px] rounded-full font-medium flex mt-4 justify-center">
+            Explore Courses
           </button>
         </div>
-      </div>
-    </section>
-  )
-}
 
-export default Services
+        {/* Second Grid - 4 Sections with 2 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className='shadow-2xl rounded-xl p-5'>
+            <span className="text-6xl text-orange-400 flex ">{<MdOutlineDesignServices/>}</span>
+            <h3 className="text-xl font-bold text-gray-800 my-4">Arts &amp; Design</h3>
+            <p className="text-gray-600">
+              Explore creative courses that allow you to express your artistic side and develop design skills.
+            </p>
+          </div>
+          <div className='shadow-2xl rounded-xl p-5'>
+          
+          <span className="text-6xl text-orange-400 flex ">{<IoFitness />}</span>
+            <h3 className="text-xl font-bold text-gray-800 my-4">Health &amp; Fitness</h3>
+            <p className="text-gray-600">
+              Improve your physical and mental well-being with a variety of health and fitness programs.
+            </p>
+          </div>
+          <div className='shadow-2xl rounded-xl p-5'>
+          <span className="text-6xl text-orange-400 flex ">{<FaLaptopCode/>}</span>
+            <h3 className="text-xl font-bold text-gray-800 my-4">Technology &amp; Learning            </h3>
+            <p className="text-gray-600">
+            Stay ahead in the digital world with cutting-edge courses in programming, AI, and data science—designed to enhance your skills and fuel innovation.
+            </p>
+          </div>
+          <div className='shadow-2xl rounded-xl p-5'>
+          <span className="text-6xl text-orange-400 flex ">{<PiSpeakerHighBold /> }</span>
+            <h3 className="text-xl font-bold text-gray-800 my-4">Digital Marketing</h3>
+            <p className="text-gray-600">
+              Learn the latest techniques in digital marketing to boost your career and business growth.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default Services;
