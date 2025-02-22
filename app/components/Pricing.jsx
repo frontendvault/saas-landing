@@ -43,7 +43,7 @@ const pricingPlans = [
 
 const Pricing = () => {
   return (
-    <div className="container mx-auto py-8 px-5 md:px-0" id="pricing">
+    <div className="container mx-auto py-8 md:py-20 px-5 md:px-0" id="pricing">
       <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-16">
       Select a Plan  That Suits You
       </h2>

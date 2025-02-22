@@ -56,7 +56,8 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-40">
+   <div className="bg-gray-50">
+     <div className="container mx-auto px-4 py-40">
       <h2 className="text-4xl font-bold text-center text-green-600 mb-20">
         What Our Students Say 
       </h2>
@@ -76,6 +77,7 @@ const Testimonials = () => {
         ))}
       </Slider>
     </div>
+   </div>
   );
 };
 

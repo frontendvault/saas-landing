@@ -124,7 +124,8 @@ export default function Courses() {
   const [activeTab, setActiveTab] = useState("Web Development");
 
   return (
-    <div className="container mx-auto p-4 flex items-center md:py-20" id="courses">
+  <div className='bg-gray-50'>
+      <div className="container mx-auto p-4 flex items-center md:py-20" id="courses">
     <div className='w-full'>  {/* Tabs */}
         <h2 className='text-center text-4xl font-bold mb-20'>Most Popular Courses</h2>
       <div className="flex flex-col md:flex-row space-x-4 mb-16">
@@ -162,5 +163,6 @@ export default function Courses() {
         ))}
       </div></div>
     </div>
+  </div>
   );
 }

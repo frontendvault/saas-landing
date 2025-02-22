@@ -2,7 +2,7 @@ import { FaStar, FaUserGraduate } from "react-icons/fa";
 
 const Banner = () => {
     return (
-      <section className="text-gray-700 py-16 h-screen flex items-center justify-center bg-orange-1">
+      <section className="text-gray-700 py-16 h-screen flex items-center justify-center bg-orange-100">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Grid 1: Heading */}
           <div className="text-center md:text-left">
